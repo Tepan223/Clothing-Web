@@ -74,3 +74,44 @@
     font-size: 20px;
     padding: 10px;
 }
+
+@media screen and (max-width: 720px) {
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left_container {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .right_container {
+        width: 100%;
+    }
+
+    .btn_left {
+        font-size: 18px;
+        padding: 20px 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .faqCollapse {
+        gap: 15px;
+    }
+
+    .faqCollapse :global(.ant-collapse-header) {
+        font-size: 18px;
+        padding: 15px !important;
+    }
+
+    :global(.ant-collapse-panel) {
+        font-size: 16px !important;
+        padding: 8px !important;
+    }
+
+    :global(.ant-collapse-content-box) {
+        padding: 15px !important;
+    }
+}

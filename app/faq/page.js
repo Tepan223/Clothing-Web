@@ -20,7 +20,7 @@ export default function Shop() {
     return (
         <div className={styles.page}>
             <div className={styles.container}>
-                <Title level={1} style={{ fontSize: "60px" }}>
+                <Title level={1} style={{ fontSize: "60px" }} className={styles.title_bread}>
                     FAQs
                 </Title>
                 <Breadcrumb

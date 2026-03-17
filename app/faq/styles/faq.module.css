@@ -37,3 +37,23 @@
     display: flex;
     gap: 50px;
 }
+
+@media screen and (max-width: 720px) {
+    .container{
+        padding: 50px 20px;
+    }
+
+    .breadcrumb {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main_container{
+        padding: 30px 15px;
+        overflow-x: auto;
+    }
+
+    .title_bread{
+        font-size: 30px !important;
+    }
+}
