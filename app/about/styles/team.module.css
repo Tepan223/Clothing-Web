@@ -1,0 +1,73 @@
+.container{
+    padding: 100px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.avatar{
+    width: 550px;
+    height: 550px;
+    background: gray;
+}
+
+.avatar_container{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.container_avatar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        padding: 50px 20px 0 20px;
+        gap: 20px;
+    }
+
+    .avatar{
+        width: 100%;
+        height: 350px;
+    }
+
+    .avatar_container{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    .container_avatar{
+        gap: 15px;
+    }
+
+    .text_container{
+        gap: 8px;
+    }
+
+    .headline{
+        font-size: 20px !important;
+    }
+
+    .title{
+        font-size: 30px!important;
+    }
+
+    .name{
+        font-size: 24px!important;
+    }
+
+    .job{
+        font-size: 16px!important;
+    }
+}

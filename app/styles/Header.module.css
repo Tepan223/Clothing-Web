@@ -1,0 +1,144 @@
+.header {
+    background: #ffffff;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    /*position: absolute;*/
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-bottom: none !important;
+    background: transparent;
+    gap: 15px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon {
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    color: #1890ff;
+}
+
+:global(.ant-menu-horizontal > .ant-menu-item:hover),
+:global(.ant-menu-horizontal > .ant-menu-submenu:hover),
+:global(.ant-menu-horizontal > .ant-menu-item-active),
+:global(.ant-menu-horizontal > .ant-menu-item-selected) {
+    color: inherit !important;
+}
+
+:global(.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected::after),
+:global(.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-selected::after) {
+    display: none !important;
+    border-bottom: none !important;
+    content: none !important;
+}
+
+:global(.ant-menu-item-selected:after){
+    opacity: 0 !important;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+
+    .header{
+        height: auto;
+        line-height: normal;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .container{
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .mobileMenu{
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        order: 1;
+    }
+
+    .hamburger{
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .logo{
+        font-size: 22px;
+        text-align: center;
+        flex: 1 1 auto;
+        order: 2;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .logo a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .actions{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex: 0 0 auto;
+        order: 3;
+    }
+
+    .icon{
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+    }
+}

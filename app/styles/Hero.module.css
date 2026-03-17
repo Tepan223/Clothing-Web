@@ -1,0 +1,118 @@
+.page{
+    height: 100vh;
+    width: 100%;
+    background: #f6f6f6;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    display: flex;
+}
+
+.left_container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 52px;
+}
+
+.discount_label{
+    background: white;
+    width: 480px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.label_text{
+    font-size: 28px;
+}
+
+.label_text span{
+    font-weight: 600;
+}
+
+.title{
+    line-height: 90px!important;
+}
+
+.btn{
+    width: 260px;
+    font-size: 26px;
+    display: flex;
+    gap: 20px;
+    padding: 35px;
+    background: #3c1800;
+    color: white;
+    border-radius: 0;
+}
+
+.right_container{
+    width: 50%;
+    height: 100%;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 720px) {
+
+    .page{
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right_container {
+        width: 100%;
+        order: 1;
+    }
+
+    .left_container {
+        width: 100%;
+        gap: 20px;
+        order: 2;
+    }
+
+    .discount_label {
+        width: 100%;
+        gap: 15px;
+        justify-content: flex-start;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .label_text {
+        font-size: 18px;
+    }
+
+    .title {
+        line-height: normal !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+    }
+
+    .subtitle {
+        font-size: 18px !important;
+        margin: 0 !important;
+    }
+
+}

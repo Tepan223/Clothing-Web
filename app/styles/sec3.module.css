@@ -1,0 +1,228 @@
+.page{
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.headline{
+    font-size: 40px;
+}
+
+.top_contain{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_btn{
+    display: flex;
+    gap: 20px;
+}
+
+.btn_link{
+    border-radius: 0;
+    background: #3c1800;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 40px 30px;
+}
+
+.btn_link {
+    background: transparent;
+    color: black;
+}
+
+.btn_link:hover{
+    color: black !important;
+    border: 1px solid!important;
+}
+
+
+.active_btn {
+    background: #3c1800 !important;
+    color: white !important;
+}
+
+.main_container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.main_container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.main_container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.card {
+    min-width: 500px;
+    flex-shrink: 0;
+    border: none;
+}
+
+.card:hover{
+    box-shadow: none;
+}
+
+.gambar{
+    width: 100%;
+    height: 500px;
+    background: darkgray;
+}
+
+.container_text{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    font-size: 20px;
+    color: darkgrey;
+}
+
+.title_card{
+    margin: 0!important;
+    font-size: 27px!important;
+    margin-bottom: 10px!important;
+}
+
+.price{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.price_card{
+    font-size: 30px!important;
+    margin: 0!important;
+}
+
+.discount_card{
+    font-size: 30px;
+    color: darkgrey;
+}
+
+.right_container{
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    align-items: center;
+    height: fit-content;
+}
+
+.card :global(.ant-card-body) {
+    width: 550px;
+}
+
+@media (max-width: 720px){
+
+    .container{
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .headline{
+        font-size: 28px;
+    }
+
+    .title{
+        font-size: 30px !important;
+    }
+
+
+    .top_container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .top_btn{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn_link{
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .main_container{
+        gap: 20px;
+        overflow-x: auto;
+    }
+
+    .card{
+        min-width: 260px;
+    }
+
+    .card :global(.ant-card-body){
+        width: auto;
+    }
+
+    .gambar{
+        height: 250px;
+    }
+
+    .container_text{
+        gap: 10px;
+    }
+
+    .category{
+        font-size: 16px;
+    }
+
+    .title_card{
+        font-size: 20px !important;
+    }
+
+    .price{
+        gap: 10px;
+    }
+
+    .price_card{
+        font-size: 20px !important;
+    }
+
+    .discount_card{
+        font-size: 18px;
+    }
+
+    .right_container{
+        font-size: 20px;
+    }
+
+    .top_contain{
+        gap: 15px;
+    }
+
+    .card :global(.ant-card-body){
+        padding-top: 0;
+    }
+
+}

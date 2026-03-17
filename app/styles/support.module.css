@@ -1,0 +1,56 @@
+.page{
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    display: flex;
+}
+
+.top_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon{
+    font-size: 80px;
+}
+
+.text_top{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        padding: 50px 20px;
+    }
+
+    .top_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card{
+        gap: 10px;
+    }
+
+    .icon{
+        font-size: 50px;
+    }
+
+    .text_top{
+        font-size: 17px !important;
+        margin: 0!important;
+    }
+}

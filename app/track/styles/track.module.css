@@ -1,0 +1,61 @@
+.page{
+    height: 100%;
+    width: 100%;
+    background: #f6f6f6;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    font-size: 24px;
+}
+
+.breadcrumb :global(.ant-breadcrumb-item a) {
+    color: #666;
+    transition: 0.3s;
+    text-decoration: none;
+    height: auto;
+}
+
+.breadcrumb :global(.ant-breadcrumb-item a:hover) {
+    color: #c97b36;
+}
+
+.main_container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    background: white;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        padding: 50px 20px;
+    }
+
+    .breadcrumb {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main_container{
+        padding: 30px 15px;
+        overflow-x: auto;
+    }
+
+    .title{
+        font-size: 40px !important;
+    }
+
+    .title_bread{
+        font-size: 30px !important;
+    }
+}

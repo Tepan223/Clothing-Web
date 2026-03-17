@@ -1,0 +1,76 @@
+.main{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.left_container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right_container{
+    width: 60%;
+}
+
+.btn_left{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px 40px;
+    border-radius: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.active {
+    background: #f6ad55;
+}
+
+.btn_left:hover {
+    background: #f6ad55 !important;
+}
+
+.faqCollapse {
+    background: transparent;
+    width: 100%;
+    border-radius: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+:global(.ant-collapse-item) {
+    background: #ffffff;
+    border: none !important;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.faqCollapse :global(.ant-collapse-header) {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 21px !important;
+    border: 1px solid #5555;
+    border-radius: 0;
+}
+
+:global(.ant-collapse-content) {
+    border-top: none !important;
+}
+
+:global(.ant-collapse-item-active) {
+    background-color: #5a2d0c !important;
+}
+
+:global(.ant-collapse-item-active .ant-collapse-header) {
+    color: white !important;
+}
+
+.faqCollapse :global(.ant-collapse-panel) {
+    color: white !important;
+    font-size: 20px;
+    padding: 10px;
+}

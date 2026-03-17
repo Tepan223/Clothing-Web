@@ -1,0 +1,190 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bar{
+    border-radius: 0;
+    font-size: 24px;
+    padding: 20px 30px;
+}
+
+.btn_track{
+    width: fit-content;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 35px 40px;
+}
+
+.side{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.track_container{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+.customSteps :global(.ant-steps-item-title ) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.productImage{
+    width: 130px;
+    height: 180px;
+    background: gray;
+}
+
+.productItem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text{
+    font-size: 24px;
+    color: #555;
+}
+
+.text_pick {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.withBorder {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.products {
+    width: 100%;
+    padding: 24px;
+}
+
+.products :global(.ant-card-body) {
+    padding: 24px;
+}
+
+.productInfo {
+    flex: 1;
+}
+
+.productInfo :global(.ant-typography) {
+    font-size: 24px;
+    margin-bottom: 10px !important;
+}
+
+.btn_another{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 25px 20px;
+}
+
+@media screen and (max-width: 720px){
+    .desc_track{
+        font-size: 17px!important;
+    }
+
+    .title_track{
+        font-size: 20px!important;
+    }
+
+    .title{
+        font-size: 28px!important;
+    }
+
+    .bar{
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .btn_track{
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .orderid{
+        font-size: 18px !important;
+    }
+
+    .side{
+        gap: 10px;
+    }
+
+    .products {
+        padding: 16px;
+    }
+
+    .products :global(.ant-card-body) {
+        padding: 16px;
+    }
+
+    .products :global(.ant-typography) h2 {
+        font-size: 22px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .productItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .productImage {
+        width: 100%;
+        height: 200px;
+    }
+
+    .productInfo {
+        width: 100%;
+    }
+
+    .productInfo :global(.ant-typography) {
+        font-size: 18px;
+        margin-bottom: 8px !important;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .text_pick {
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .withBorder {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+
+    .products :global(.ant-divider) {
+        margin: 16px 0;
+    }
+
+    .btn_another{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}

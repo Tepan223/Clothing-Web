@@ -1,0 +1,754 @@
+.page :global(.ant-tabs-content-holder){
+    border-left: none;
+}
+
+.page :global(.ant-tabs-tab){
+    border: 1px solid #5555;
+    width: 400px;
+    padding: 20px !important;
+}
+
+.page :global(.ant-tabs-tab:hover){
+    color: black;
+}
+
+
+.page :global(.ant-tabs-tab-active){
+    background: #f6ad55;
+}
+
+.page :global(.ant-tabs-ink-bar){
+    display: none;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.email_container :global(.ant-input),
+.phone_container :global(.ant-input),
+.name_container :global(.ant-input),
+.street :global(.ant-input),
+.company :global(.ant-input),
+.zip :global(.ant-input),
+.cardForm :global(.ant-input){
+    height: 40px;
+    font-size: 18px;
+    padding: 35px 20px;
+    border-radius: 0;
+}
+
+.gender_container :global(.ant-select),
+.country :global(.ant-select),
+.city :global(.ant-select),
+.state :global(.ant-select){
+    font-size: 18px;
+    padding: 20px 20px;
+    border-radius: 0;
+}
+
+.gender_container :global(.ant-select-item-option-content){
+    font-size: 18px !important;
+}
+
+.btn{
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 30px;
+    border-radius: 0;
+}
+
+.logout{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.new_password, .confirm_password, .password{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.password_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forgot{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3c1900;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.password_container :global(.ant-input-affix-wrapper){
+    font-size: 20px;
+    border-radius: 0;
+    padding: 20px;
+}
+
+.address_container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    margin-bottom: 30px !important;
+    color: #3c1900 !important;
+}
+
+.radioGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.radioItem {
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 0;
+}
+
+.methodTitle {
+    margin: 0 !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.cardForm {
+    border-radius: 0;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3c1900;
+}
+
+.input {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    color: #999;
+}
+
+.input:hover {
+    border-color: #3c1900;
+}
+
+.input:focus {
+    border-color: #3c1900 !important;
+    box-shadow: 0 0 0 3px rgba(60, 25, 0, 0.1);
+}
+
+.container_card{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.btn_add{
+    width: fit-content;
+    padding: 30px;
+    border-radius: 0;
+}
+
+.gap_text{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.payment_container :global(.ant-card){
+    border-radius: 0;
+}
+
+.payment_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sort{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.top_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_container :global(.ant-select){
+    width: 100px !important;
+    border-radius: 0!important;
+}
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.header_card{
+    background: #f6ad55;
+    border-radius: 0;
+    width: 100%;
+}
+
+.header_card :global(.ant-card-body){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card_item{
+    border-radius: 0;
+    border: 1px solid #5555;
+}
+
+.image_container{
+    width: 140px;
+    aspect-ratio: 3 / 4;
+    background: gray;
+}
+
+.item_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item_meta{
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.bot_top_text{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn_container{
+    display: flex;
+    gap: 30px;
+}
+
+.bot_bot_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bot_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list_addres{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-bottom:30px;
+}
+
+.address_card{
+    border:1px solid #eee;
+    border-radius:8px;
+}
+
+.address_row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.address_action{
+    display:flex;
+    gap:20px;
+}
+
+.edit{
+    font-size:18px;
+    cursor:pointer;
+    color:black;
+}
+
+.delete{
+    font-size:18px;
+    cursor:pointer;
+    color:red;
+}
+
+.mobileTabContainer {
+    padding: 20px;
+    width: 100%;
+}
+
+.mobileTabSelect {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mobileTabSelect :global(.ant-select-selector) {
+    height: 50px !important;
+    padding: 8px 15px !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+}
+
+.mobileTabContent {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+@media screen and (max-width: 720px) {
+    .page :global(.ant-tabs) {
+        display: none;
+    }
+
+    .mobileTabContainer {
+        padding: 15px;
+    }
+
+    .mobileTabSelect {
+        margin-bottom: 15px;
+    }
+
+    .mobileTabSelect :global(.ant-select-selector) {
+        height: 45px !important;
+        font-size: 15px !important;
+    }
+
+    .mobileTabContent {
+        padding: 12px;
+    }
+
+    /* Personal Information Mobile */
+    .form_container {
+        gap: 15px;
+    }
+
+    .name_container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .email_container :global(.ant-input),
+    .phone_container :global(.ant-input),
+    .name_container :global(.ant-input) {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .gender_container :global(.ant-select) {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .title_profile{
+        font-size: 18px!important;
+    }
+
+    /* Orders Mobile */
+    .top_container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .sort {
+        width: 100%;
+    }
+
+    .sort :global(.ant-select) {
+        width: 100% !important;
+    }
+
+    .header_card :global(.ant-card-body) {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .header_text {
+        width: 100%;
+        gap: 0;
+    }
+
+    .header_text .ant-typography-secondary {
+        font-size: 12px !important;
+    }
+
+    .header_text h3.ant-typography {
+        font-size: 14px !important;
+    }
+
+    .item_container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .image_container {
+        width: 100%;
+        height: 150px;
+    }
+
+    .item_meta {
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 12px !important;
+    }
+
+    .item_meta .ant-typography {
+        font-size: 12px !important;
+    }
+
+    .bot_container {
+        gap: 15px;
+    }
+
+    .bot_top_text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .bot_top_text .ant-tag {
+        font-size: 12px !important;
+        padding: 4px 8px !important;
+    }
+
+    .bot_top_text .ant-typography {
+        font-size: 12px !important;
+    }
+
+    .bot_bot_text {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+
+    .btn_container {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn_container .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .order_Title{
+        font-size: 30px!important;
+    }
+
+    .text_order{
+        font-size: 18px!important;
+    }
+
+    .sort :global(.ant-select){
+        width: 120px!important;
+    }
+
+    .sort{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text_order_bold{
+        font-size: 18px !important;
+    }
+
+    .text_secondary{
+        font-size: 18px!important;
+    }
+
+    .title_product{
+        font-size: 22px!important;
+    }
+
+    .item_meta{
+        font-size: 16px!important;
+    }
+
+    .tag{
+        font-size: 16px !important;
+        padding: 5px !important;
+    }
+
+    .text_order_product{
+        font-size: 16px !important;
+    }
+
+    .order_action{
+        font-size: 16px!important;
+    }
+
+    /* Address Mobile */
+    .list_addres {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .address_row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .address_action {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .address_action .edit,
+    .address_action .delete {
+        font-size: 14px;
+    }
+
+    .address_container {
+        gap: 15px;
+    }
+
+    .address_container .ant-typography {
+        font-size: 18px !important;
+    }
+
+    /* Payment Mobile */
+    .payment_list {
+        gap: 12px;
+    }
+
+    .payment_card :global(.ant-card-body) {
+        padding: 12px;
+    }
+
+    .gap_text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .gap_text .ant-typography {
+        font-size: 14px !important;
+    }
+
+    .cardForm {
+        margin-top: 15px;
+    }
+
+    .container_card {
+        gap: 12px;
+    }
+
+    .container_card .ant-typography {
+        font-size: 14px !important;
+    }
+
+    .container_card :global(.ant-input) {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .btn_add {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px !important;
+    }
+
+    .title_address{
+        font-size: 28px!important;
+    }
+
+    .title_container_address{
+        font-size: 18px!important;
+    }
+
+    .company :global(.ant-input){
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .country :global(.ant-select){
+        padding: 5px 10px;
+    }
+
+    .street :global(.ant-input){
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .city :global(.ant-select){
+        padding: 5px 10px;
+    }
+
+    .state :global(.ant-select){
+        padding: 5px 10px;
+    }
+
+    .zip :global(.ant-input){
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+
+    /* Password Manager Mobile */
+    .title_password{
+        font-size: 18px!important;
+    }
+
+    .password_container {
+        gap: 15px;
+    }
+
+    .password_container .ant-typography {
+        font-size: 14px !important;
+    }
+
+    .password_container :global(.ant-input-affix-wrapper) {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .forgot {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    /* Logout Mobile */
+    .logout {
+        gap: 15px;
+    }
+
+    .logout .ant-typography {
+        font-size: 14px !important;
+    }
+
+    .logout h1.ant-typography {
+        font-size: 20px !important;
+    }
+
+    .cardForm {
+        margin-top: 15px;
+    }
+
+    .cardForm :global(.ant-card-body) {
+        padding: 16px;
+    }
+
+    .container_card {
+        gap: 15px;
+    }
+
+    .container_card .ant-typography {
+        font-size: 15px;
+        margin-bottom: 5px !important;
+    }
+
+    .container_card :global(.ant-input) {
+        height: 42px;
+        font-size: 14px;
+        padding: 0 12px;
+    }
+
+    .container_card :global(.ant-input)::placeholder {
+        font-size: 14px;
+    }
+
+    .container_card :global(.ant-row) {
+        margin: 0 !important;
+    }
+
+    .container_card :global(.ant-col) {
+        padding: 0 !important;
+    }
+
+    .container_card :global(.ant-col-12) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container_card :global(.ant-col-12):last-child {
+        margin-bottom: 0;
+    }
+
+    .container_card :global(.ant-checkbox-wrapper) {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .btn_add {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px !important;
+    }
+
+    .btn_add:hover {
+        transform: none;
+    }
+
+    .gap_text{
+        flex-direction: row;
+    }
+
+    .text_icon{
+        gap: 5px;
+    }
+
+    .name_payment{
+        font-size: 16px!important;
+    }
+
+    .link_payment{
+        font-size: 16px!important;
+    }
+}

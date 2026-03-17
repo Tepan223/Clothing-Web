@@ -1,0 +1,207 @@
+.page{
+    height: 100%;
+    width: 100%;
+    background: #f6f6f6;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    font-size: 24px;
+}
+
+.breadcrumb :global(.ant-breadcrumb-item a) {
+    color: #666;
+    transition: 0.3s;
+    text-decoration: none;
+    height: auto;
+}
+
+.breadcrumb :global(.ant-breadcrumb-item a:hover) {
+    color: #c97b36;
+}
+
+.main_container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.icon{
+    font-size: 100px;
+    color: #f6ad55;
+    background: black;
+    border-radius: 50%;
+}
+
+.btn_invoice{
+    padding: 30px;
+    font-size: 24px;
+}
+
+.card_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_container_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.product_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_gray{
+    width: 140px;
+    height: 180px;
+    background: gray;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gap_price{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title_detailsOrder{
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        padding: 50px 20px;
+    }
+
+    .breadcrumb {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main_container{
+        padding: 30px 15px;
+        overflow-x: auto;
+    }
+
+    .title{
+        font-size: 40px !important;
+    }
+
+    .title_bread{
+        font-size: 30px !important;
+    }
+
+    .card_container{
+        flex-direction: column;
+        align-items: start;
+        border-radius: 0;
+        gap: 15px;
+    }
+
+    .main_container :global(.ant-card){
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .text_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text{
+        font-size: 18px!important;
+    }
+
+    .btn_invoice{
+        margin-top: 0 !important;
+        font-size: 16px;
+        border-radius: 0;
+        padding: 20px 15px;
+    }
+
+    .title_detailsOrder{
+        font-size: 24px!important;
+    }
+
+    .gap_price{
+        gap: 20px;
+    }
+
+    .product {
+        gap: 10px;
+        width: 220px;
+    }
+
+    .img_gray {
+        width: 80px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+    .text_img_product {
+        flex: 1;
+        gap: 4px;
+    }
+
+    .title_item {
+        font-size: 13px !important;
+    }
+
+    .text_item {
+        font-size: 12px !important;
+    }
+
+    .price_item {
+        font-size: 16px !important;
+    }
+
+    .details_title_top{
+        font-size: 18px!important;
+    }
+
+    .price{
+        font-size: 16px !important;
+    }
+}
+
+

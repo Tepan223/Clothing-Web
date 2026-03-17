@@ -1,0 +1,200 @@
+.page{
+    height: 100%;
+    width: 100%;
+    background: #f6f6f6;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    font-size: 24px;
+}
+
+.breadcrumb :global(.ant-breadcrumb-item a) {
+    color: #666;
+    transition: 0.3s;
+    text-decoration: none;
+    height: auto;
+}
+
+.breadcrumb :global(.ant-breadcrumb-item a:hover) {
+    color: #c97b36;
+}
+
+.main_container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    background: white;
+    display: flex;
+    gap: 50px;
+}
+
+.left_container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.right_container{
+    width: 40%;
+    background: #f6f6f6;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.social_icon{
+    font-size: 45px;
+    background: #f6ad55;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.icon_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topRow {
+    display: flex;
+    gap: 20px;
+}
+
+.field {
+    flex: 1;
+}
+
+.input_bar{
+    font-size: 24px;
+    padding: 25px 30px;
+    border-radius: 0;
+}
+
+.text_area{
+    font-size: 24px;
+    padding: 25px 30px;
+    border-radius: 0;
+}
+
+.btn_message{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 40px;
+    border-radius: 0;
+    width: fit-content;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+.map img{
+    width: 100%;
+    object-fit: cover;
+    height: 550px;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        padding: 50px 20px;
+    }
+
+    .breadcrumb {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main_container{
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left_container{
+        width: 100%;
+        gap: 30px;
+    }
+
+    .right_container{
+        width: 100%;
+        padding: 30px 20px;
+        gap: 40px;
+    }
+
+    .social_icon{
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .icon_container{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .topRow{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .field{
+        width: 100%;
+    }
+
+    .input_bar{
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .text_area{
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .btn_message{
+        font-size: 18px;
+        padding: 20px 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .map img{
+        height: 300px;
+    }
+
+    .title_contact{
+        font-size: 24px !important;
+    }
+
+    .text_contact{
+        font-size: 18px !important;
+    }
+
+    .title_input{
+        font-size: 20px !important;
+    }
+
+    .title_bread{
+        font-size: 30px !important;
+    }
+
+    .title_info{
+        font-size: 28px !important;
+    }
+
+    .text_info{
+        font-size: 18px!important;
+    }
+}

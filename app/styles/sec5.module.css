@@ -1,0 +1,394 @@
+.page{
+    height: 100%;
+    width: 100%;
+    background: white;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.top_container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.headline{
+    font-size: 32px;
+}
+
+.title_top_container{
+    font-size: 64px !important;
+    margin: 0 !important;
+}
+
+.bot_top_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc_top_container{
+    font-size: 24px;
+    margin: 0 !important;
+}
+
+.mid_container {
+    display: flex;
+    gap: 30px;
+}
+
+.card_1{
+    width: 830px !important;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+
+.card_container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.left_container_card {
+    width: 50%;
+}
+
+.background_img {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    overflow: hidden;
+    background: grey;
+}
+
+.discount_label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    color: #38a169;
+    padding: 6px 14px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.icon {
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.icon_container{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    justify-content: space-between;
+}
+
+.icon:hover {
+    background: #2f855a;
+    color: white;
+}
+
+.right_container_card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category {
+    color: #888;
+    font-size: 24px;
+}
+
+.title_mid {
+    margin: 0 !important;
+    font-size: 30px !important;
+}
+
+.desc_mid{
+    font-size: 22px;
+    width: 350px;
+    letter-spacing: 1px;
+}
+
+.price{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.discount_price{
+    font-size: 35px;
+    color: #888;
+}
+
+.discount_text{
+    display: flex;
+    gap: 15px;
+}
+
+.rate{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.btn_mid{
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    color: #3c1800;
+    border: none;
+    box-shadow: none !important;
+    padding: 0;
+    background: transparent;
+}
+
+.bot_container{
+    display: flex;
+    gap: 30px;
+}
+
+.bot_card{
+    width: 830px !important;
+    height: 548px !important;
+    padding: 20px 30px;
+    border-radius: 0;
+    display: flex;
+}
+
+.card_bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.discount_bot{
+    font-size: 30px;
+}
+
+.title_bot{
+    margin: 0 !important;
+    font-size: 60px !important;
+    width: 450px;
+    line-height: 90px !important;
+}
+
+.desc_bot{
+    margin: 0 !important;
+    font-size: 24px;
+    width: 500px;
+}
+
+.btn_bot{
+    width: 260px;
+    font-size: 26px;
+    display: flex;
+    gap: 20px;
+    padding: 35px;
+    border-radius: 0;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mid_container :global(.ant-card){
+    box-shadow: none;
+}
+
+.img_promo1{
+    width: 288px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.img_promo2{
+    width: 378px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        padding: 50px 20px;
+    }
+
+    .top_container{
+        gap: 10px;
+    }
+
+    .headline {
+        font-size: 24px;
+    }
+
+    .title_top_container {
+        font-size: 28px !important;
+    }
+
+    .bot_top_container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .desc_top_container {
+        font-size: 12px;
+    }
+
+    .mid_container :global(.ant-card){
+        width: 330px !important;
+    }
+
+    .mid_container {
+        overflow-x: auto;
+        padding-bottom: 20px;
+        margin: 0 -20px;
+        padding-left: 20px;
+        width: calc(100% + 40px);
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .card_1 {
+        width: 300px !important;
+    }
+
+    .card_container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .left_container_card {
+        width: 100%;
+    }
+
+    .background_img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .discount_label {
+        font-size: 16px;
+        padding: 4px 10px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    .icon_container {
+        height: 160px;
+    }
+
+    .right_container_card {
+        width: 100%;
+        padding: 0 10px 15px 10px;
+    }
+
+    .category {
+        font-size: 16px;
+    }
+
+    .title_mid {
+        font-size: 22px !important;
+    }
+
+    .desc_mid {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .price, .discount_price, .rate {
+        font-size: 24px;
+    }
+
+    .btn_mid {
+        font-size: 18px;
+    }
+
+    /* BOTTOM CONTAINER */
+    .bot_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bot_card {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 400px;
+        padding: 20px;
+    }
+
+    .card_bot {
+        flex-direction: column;
+        }
+
+    .left {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .discount_bot {
+        font-size: 20px;
+    }
+
+    .title_bot {
+        font-size: 36px !important;
+        width: 100%;
+        line-height: 48px !important;
+    }
+
+    .desc_bot {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .btn_bot {
+        width: 200px;
+        font-size: 20px;
+        padding: 20px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .card_bot img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img_promo{
+        display: none !important;
+    }
+
+    .right{
+        display: none;
+    }
+}

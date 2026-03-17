@@ -1,0 +1,161 @@
+.page{
+    height: 130vh;
+    width: 100%;
+    background: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left_container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+    justify-content: space-around;
+}
+
+.right_container{
+    width: 50%;
+    background: gray;
+}
+
+.login_container :global(.ant-input){
+    height: 40px;
+    font-size: 18px;
+    padding: 35px 20px;
+    border-radius: 0;
+}
+
+.password :global(.ant-input-password){
+    padding: 20px 20px;
+    border-radius: 0;
+    font-size: 18px;
+}
+
+.check{
+    font-size: 24px;
+    color: #3c1900;
+}
+
+.under{
+    font-size: 24px;
+    color: #3c1900;
+    text-decoration: underline;
+}
+
+.check :global(.ant-checkbox-checked){
+    background: #3c1900;
+}
+
+.sign_btn{
+    width: 100%;
+    font-size: 24px;
+    padding: 30px;
+    border-radius: 0;
+}
+
+.sign_in{
+    font-size: 18px;
+    text-decoration: underline;
+    color: #3c1900;
+    padding-left: 5px;
+}
+
+.login_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.no_acc{
+    text-align: center;
+}
+
+.name{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.left_name,
+.right_name{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 720px) {
+    .page {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left_container {
+        width: 100%;
+        padding: 40px 20px;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .right_container {
+        display: none;
+    }
+
+    .login_container :global(.ant-input) {
+        height: 30px;
+        font-size: 14px;
+        padding: 25px 12px;
+    }
+
+    .password :global(.ant-input-password) {
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+
+    .password :global(.ant-input-password) input {
+        font-size: 14px;
+    }
+
+    .name {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .left_name,
+    .right_name {
+        width: 100%;
+    }
+
+    .check {
+        font-size: 16px;
+    }
+
+    .under {
+        font-size: 16px;
+    }
+
+    .sign_btn {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .login_container {
+        gap: 15px;
+    }
+
+    .no_acc {
+        font-size: 14px;
+    }
+
+    .sign_in {
+        font-size: 14px;
+    }
+}
